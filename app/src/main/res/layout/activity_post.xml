@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageSelect"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/input_outline"
+                android:maxHeight="100dp"
+                android:maxWidth="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <EditText
+                android:id="@+id/titleField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageSelect"
+                android:layout_centerHorizontal="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_outline"
+                android:ems="10"
+                android:hint="Post Tiltle"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/recipes"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:hint="Ingredients"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/input_outline"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:padding="15dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/descField"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_below="@+id/titleField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Procedures:"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5sp"
+            android:background="@color/colorPrimary"
+            android:text="Submit Post"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>
